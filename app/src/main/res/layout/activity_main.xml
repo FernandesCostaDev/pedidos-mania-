@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue2"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnPedido"
+        style="@style/ButtonMain"
+        android:layout_marginTop="112dp"
+        android:contentDescription="@null"
+        android:src="@drawable/baseline_edit_note_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/TextMain"
+        android:text="@string/main_label_pedido"
+        app:layout_constraintEnd_toEndOf="@+id/btnPedido"
+        app:layout_constraintStart_toStartOf="@+id/btnPedido"
+        app:layout_constraintTop_toBottomOf="@+id/btnPedido" />
+
+    <ImageButton
+        android:id="@+id/btnCliente"
+        style="@style/ButtonMain"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@null"
+        android:src="@drawable/baseline_person_add_alt_1_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnProduto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextMain"
+        android:text="@string/main_label_cadCliente"
+        app:layout_constraintEnd_toEndOf="@+id/btnCliente"
+        app:layout_constraintStart_toStartOf="@+id/btnCliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnCliente" />
+
+    <ImageButton
+        android:id="@+id/btnProduto"
+        style="@style/ButtonMain"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@null"
+        android:src="@drawable/baseline_icecream_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCliente"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:tint="@android:color/white" />
+
+    <TextView
+        style="@style/TextMain"
+        android:text="@string/main_label_cadProduto"
+        app:layout_constraintEnd_toEndOf="@+id/btnProduto"
+        app:layout_constraintStart_toStartOf="@+id/btnProduto"
+        app:layout_constraintTop_toBottomOf="@+id/btnProduto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

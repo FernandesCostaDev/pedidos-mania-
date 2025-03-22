@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Mania Sorvete</string>
+
+    <string name="main_label_pedido">Fazer Pedido</string>
+    <string name="main_label_cadCliente">Cadastro de Clientes</string>
+    <string name="main_label_cadProduto">Cadastro de Produtos</string>
+
+    <string name="produto_label_cadProduto">Cadastro de Produtos</string>
+    <string name="produto_label_descricao">Descrição:</string>
+    <string name="produto_label_monetario">R$:</string>
+
+    <string name="cliente_label_cadCliente">Cadastro Clientes</string>
+    <string name="cliente_label_nomeFantasia">Nome Fantasia:</string>
+    <string name="cliente_label_logradouro">Logradouro:</string>
+    <string name="cliente_label_numero">n.º</string>
+    <string name="clientes_label_cidade">Cidade:</string>
+    <string name="cliente_label_bairro">Bairro:</string>
+
+
+    <string name="itemProduto_label_descricao">Descrição:</string>
+    <string name="itemProduto_label_valor">Valor:</string>
+    <string name="itemProduto_label_valorMonetario">R$ 22.000,00</string>
+
+    <string name="cliente_label_telefone">Telefone:</string>
+
+    <string name="msg_deletarProduto">Confirma a exclusão do produto?</string>
+    <string name="msg_deletarCliente">Confirma a exclusão do cliente?</string>
+
+    <string name="produto_btn_save">Salvar</string>
+    <string name="item_cliente_nomeCliente">Nome Cliente:</string>
+    <string name="pedido_autoComplete_selectCliente">Selecione o cliente:</string>
+    <string name="pedido_txt_msg_pedido">Realizar pedido</string>
+
+</resources>

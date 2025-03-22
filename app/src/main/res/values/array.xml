@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cidades">
+        <item>Abatiá</item>
+        <item>Adrianópolis</item>
+        <item>Agudos do Sul</item>
+        <item>Almirante Tamandaré</item>
+        <item>Altamira do Paraná</item>
+        <item>Alto Paraíso (3)</item>
+        <item>Alto Paraná</item>
+        <item>Alto Piquiri</item>
+        <item>Altônia</item>
+        <item>Alvorada do Sul</item>
+        <item>Amaporã</item>
+        <item>Ampére</item>
+        <item>Anahy</item>
+        <item>Andirá</item>
+        <item>Angulo</item>
+        <item>Antonina</item>
+        <item>Antônio Olinto</item>
+        <item>Apucarana</item>
+        <item>Arapongas</item>
+        <item>Arapoti</item>
+        <item>Arapua</item>
+        <item>Araruna</item>
+        <item>Araucária</item>
+        <item>Ariranha do Ivaí</item>
+        <item>Assaí</item>
+        <item>Assis Chateaubriand</item>
+        <item>Astorga</item>
+        <item>Atalaia</item>
+        <item>Balsa Nova</item>
+        <item>Bandeirantes</item>
+        <item>Barbosa Ferraz</item>
+        <item>Barra do Jacaré</item>
+        <item>Barracão</item>
+        <item>Bela Vista da Caroba</item>
+        <item>Bela Vista do Paraíso</item>
+        <item>Bituruna</item>
+        <item>Boa Esperança</item>
+        <item>Boa Esperança do Iguaçu</item>
+        <item>Boa Ventura de São Roque</item>
+        <item>Boa Vista da Aparecida</item>
+        <item>Bocaiúva do Sul</item>
+        <item>Bom Jesus do Sul</item>
+        <item>Bom Sucesso</item>
+        <item>Bom Sucesso do Sul</item>
+        <item>Borrazópolis</item>
+        <item>Braganey</item>
+        <item>Brasilândia do Sul</item>
+        <item>Cafeara</item>
+        <item>Cafelândia</item>
+        <item>Cafezal do Sul</item>
+        <item>Califórnia</item>
+        <item>Cambará</item>
+        <item>Cambé</item>
+        <item>Cambira</item>
+        <item>Campina da Lagoa</item>
+        <item>Campina do Simão</item>
+        <item>Campina Grande do Sul</item>
+        <item>Campo Bonito</item>
+        <item>Campo do Tenente</item>
+        <item>Campo Largo</item>
+        <item>Campo Magro</item>
+        <item>Campo Mourão</item>
+        <item>Cândido de Abreu</item>
+        <item>Candói</item>
+        <item>Cantagalo</item>
+        <item>Capanema</item>
+        <item>Capitão Leônidas Marques</item>
+        <item>Carambeí</item>
+        <item>Carlópolis</item>
+        <item>Cascavel</item>
+        <item>Castro</item>
+        <item>Catanduvas</item>
+        <item>Centenário do Sul</item>
+        <item>Cerro Azul</item>
+        <item>Céu Azul</item>
+        <item>Chopinzinho</item>
+        <item>Cianorte</item>
+        <item>Cidade Gaúcha</item>
+        <item>Clevelândia</item>
+        <item>Colombo</item>
+        <item>Colorado</item>
+        <item>Congonhinhas</item>
+        <item>Conselheiro Mairinck</item>
+        <item>Contenda</item>
+        <item>Corbélia</item>
+        <item>Cornélio Procópio</item>
+        <item>Coronel Domingos Soares</item>
+        <item>Coronel Vivida</item>
+        <item>Corumbataí do Sul</item>
+        <item>Cruz Machado</item>
+        <item>Cruzeiro do Iguaçu</item>
+        <item>Cruzeiro do Oeste</item>
+        <item>Cruzeiro do Sul</item>
+        <item>Cruzmaltina</item>
+        <item>Curitiba</item>
+        <item>Curiúva</item>
+        <item>Diamante do Norte</item>
+        <item>Diamante do Sul</item>
+        <item>Diamante do Oeste</item>
+        <item>Dois Vizinhos</item>
+        <item>Douradina</item>
+        <item>Doutor Camargo</item>
+        <item>Doutor Ulysses</item>
+        <item>Enéas Marques</item>
+        <item>Engenheiro Beltrão</item>
+        <item>Entre Rios do Oeste</item>
+        <item>Esperança Nova</item>
+        <item>Espigão Alto do Iguaçu</item>
+        <item>Farol</item>
+        <item>Faxinal</item>
+        <item>Fazenda Rio Grande</item>
+        <item>Fênix</item>
+        <item>Fernandes Pinheiro</item>
+        <item>Figueira</item>
+        <item>Flor da Serra do Sul</item>
+        <item>Florai</item>
+        <item>Floresta</item>
+        <item>Florestópolis</item>
+        <item>Flórida</item>
+        <item>Formosa do Oeste</item>
+        <item>Foz do Iguaçu</item>
+        <item>Foz do Jordão</item>
+        <item>Francisco Alves</item>
+        <item>Francisco Beltrão</item>
+        <item>General Carneiro</item>
+        <item>Godoy Moreira</item>
+        <item>Goioerê</item>
+        <item>Goioxim</item>
+        <item>Grandes Rios</item>
+        <item>Guaíra</item>
+        <item>Guairaçá</item>
+        <item>Guamiranga</item>
+        <item>Guapirama</item>
+        <item>Guaporema</item>
+        <item>Guaraci</item>
+        <item>Guaraniaçu</item>
+        <item>Guaraqueçaba</item>
+        <item>Guarapuava</item>
+        <item>Guaratuba</item>
+        <item>Honório Serpa</item>
+        <item>Ibaiti</item>
+        <item>Ibema</item>
+        <item>Ibiporã</item>
+        <item>Icaraíma</item>
+        <item>Iguaraçu</item>
+        <item>Iguatu</item>
+        <item>Imbaú</item>
+        <item>Imbituva</item>
+        <item>Inácio Martins</item>
+        <item>Inajá</item>
+        <item>Indianópolis</item>
+        <item>Ipiranga</item>
+        <item>Iporã</item>
+        <item>Iracema do Oeste</item>
+        <item>Irati</item>
+        <item>Iretama</item>
+        <item>Itaguajé</item>
+        <item>Itambaracá</item>
+        <item>Itambé</item>
+        <item>Itapejara do Oeste</item>
+        <item>Itaperuçu</item>
+        <item>Itaúna do Sul</item>
+        <item>Ivaí</item>
+        <item>Ivaiporã</item>
+        <item>Ivaté</item>
+        <item>Ivatuba</item>
+        <item>Jaboti</item>
+        <item>Jacarezinho</item>
+        <item>Jaguapitã</item>
+        <item>Jaguariaíva</item>
+        <item>Jandaia do Sul</item>
+        <item>Janiópolis</item>
+        <item>Japira</item>
+        <item>Japurá</item>
+        <item>Jardim Alegre</item>
+        <item>Jardim Olinda</item>
+        <item>Jataizinho</item>
+        <item>Jesuítas</item>
+        <item>Joaquim Távora</item>
+        <item>Jundiaí do Sul</item>
+        <item>Juranda</item>
+        <item>Jussara</item>
+        <item>Kaloré</item>
+        <item>Lapa</item>
+        <item>Laranjal</item>
+        <item>Laranjeiras do Sul</item>
+        <item>Leópolis</item>
+        <item>Lidianópolis</item>
+        <item>Lindoeste</item>
+        <item>Loanda</item>
+        <item>Lobato</item>
+        <item>Londrina</item>
+        <item>Luiziana</item>
+        <item>Lunardelli</item>
+        <item>Lupionópolis</item>
+        <item>Mallet</item>
+        <item>Mamborê</item>
+        <item>Mandaguaçu</item>
+        <item>Mandaguari</item>
+        <item>Mandirituba</item>
+        <item>Manfrinópolis</item>
+        <item>Mangueirinha</item>
+        <item>Manoel Ribas</item>
+        <item>Marechal Cândido Rondon</item>
+        <item>Maria Helena</item>
+        <item>Marialva</item>
+        <item>Marilândia do Sul</item>
+        <item>Marilena</item>
+        <item>Mariluz</item>
+        <item>Maringá</item>
+        <item>Mariópolis</item>
+        <item>Maripá</item>
+        <item>Marmeleiro</item>
+        <item>Marquinho</item>
+        <item>Marumbi</item>
+        <item>Matelândia</item>
+        <item>Matinhos</item>
+        <item>Mato Rico</item>
+        <item>Mauá da Serra</item>
+        <item>Medianeira</item>
+        <item>Mercedes</item>
+        <item>Mirador</item>
+        <item>Miraselva</item>
+        <item>Missal</item>
+        <item>Moreira Sales</item>
+        <item>Morretes</item>
+        <item>Munhoz de Melo</item>
+        <item>Nossa Senhora das Graças</item>
+        <item>Nova Aliança do Ivaí</item>
+        <item>Nova América da Colina</item>
+        <item>Nova Aurora</item>
+        <item>Nova Cantu</item>
+        <item>Nova Esperança</item>
+        <item>Nova Esperança do Sudoeste</item>
+        <item>Nova Fátima</item>
+        <item>Nova Laranjeiras</item>
+        <item>Nova Londrina</item>
+        <item>Nova Olímpia</item>
+        <item>Nova Prata do Iguaçu</item>
+        <item>Nova Santa Bárbara</item>
+        <item>Nova Santa Rosa</item>
+        <item>Nova Tebas</item>
+        <item>Novo Itacolomi</item>
+        <item>Ortigueira</item>
+        <item>Ourizona</item>
+        <item>Ouro Verde do Oeste</item>
+        <item>Paiçandu</item>
+        <item>Palmas</item>
+        <item>Palmeira</item>
+        <item>Palmital</item>
+        <item>Palotina</item>
+        <item>Paraíso do Norte</item>
+        <item>Paranacity</item>
+        <item>Paranaguá</item>
+        <item>Paranapoema</item>
+        <item>Paranavaí</item>
+        <item>Pato Bragado</item>
+        <item>Pato Branco</item>
+        <item>Paula Freitas</item>
+        <item>Paulo Frontin</item>
+        <item>Peabiru</item>
+        <item>Perobal</item>
+        <item>Pérola</item>
+        <item>Pérola do Oeste</item>
+        <item>Piên</item>
+        <item>Pinhais</item>
+        <item>Pinhal de São Bento</item>
+        <item>Pinhalão</item>
+        <item>Pinhão</item>
+        <item>Piraí do Sul</item>
+        <item>Piraquara</item>
+        <item>Pitanga</item>
+        <item>Pitangueiras</item>
+        <item>Planaltina do Paraná</item>
+        <item>Planalto</item>
+        <item>Ponta Grossa</item>
+        <item>Pontal do Paraná</item>
+        <item>Porecatu</item>
+        <item>Porto Amazonas</item>
+        <item>Porto Barreiro</item>
+        <item>Porto Rico</item>
+        <item>Porto Vitória</item>
+        <item>Prado Ferreira</item>
+        <item>Pranchita</item>
+        <item>Presidente Castelo Branco</item>
+        <item>Primeiro de Maio</item>
+        <item>Prudentópolis</item>
+        <item>Quarto Centenário</item>
+        <item>Quatiguá</item>
+        <item>Quatro Barras</item>
+        <item>Quatro Pontes</item>
+        <item>Quedas do Iguaçu</item>
+        <item>Querência do Norte</item>
+        <item>Quinta do Sol</item>
+        <item>Quitandinha</item>
+        <item>Ramilândia</item>
+        <item>Rancho Alegre</item>
+        <item>Rancho Alegre do Oeste</item>
+        <item>Realeza</item>
+        <item>Rebouças</item>
+        <item>Renascença</item>
+        <item>Reserva</item>
+        <item>Reserva do Iguaçu</item>
+        <item>Ribeirão Claro</item>
+        <item>Ribeirão do Pinhal</item>
+        <item>Rio Azul</item>
+        <item>Rio Bom</item>
+        <item>Rio Bonito do Iguaçu</item>
+        <item>Rio Branco do Ivaí</item>
+        <item>Rio Branco do Sul</item>
+        <item>Rio Negro</item>
+        <item>Rolândia</item>
+        <item>Roncador</item>
+        <item>Rondon</item>
+        <item>Rosário do Ivaí</item>
+        <item>Sabáudia</item>
+        <item>Salgado Filho</item>
+        <item>Salto do Itararé</item>
+        <item>Salto do Lontra</item>
+        <item>Santa Amélia</item>
+        <item>Santa Cecília do Pavão</item>
+        <item>Santa Cruz de Monte Castelo</item>
+        <item>Santa Fé</item>
+        <item>Santa Helena</item>
+        <item>Santa Inês</item>
+        <item>Santa Isabel do Ivaí</item>
+        <item>Santa Izabel do Oeste</item>
+        <item>Santa Lúcia</item>
+        <item>Santa Maria do Oeste</item>
+        <item>Santa Mariana</item>
+        <item>Santa Mônica</item>
+        <item>Santa Tereza do Oeste</item>
+        <item>Santa Terezinha de Itaipu</item>
+        <item>Santana do Itararé</item>
+        <item>Santo Antônio da Platina</item>
+        <item>Santo Antônio do Caiuá</item>
+        <item>Santo Antônio do Paraíso</item>
+        <item>Santo Antônio do Sudoeste</item>
+        <item>Santo Inácio</item>
+        <item>São Carlos do Ivaí</item>
+        <item>São Jerônimo da Serra</item>
+        <item>São João</item>
+        <item>São João do Caiuá</item>
+        <item>São João do Ivaí</item>
+        <item>São João do Triunfo</item>
+        <item>São Jorge do Ivaí</item>
+        <item>São Jorge do Patrocínio</item>
+        <item>São Jorge do Oeste</item>
+        <item>São José da Boa Vista</item>
+        <item>São José das Palmeiras</item>
+        <item>São José dos Pinhais</item>
+        <item>São Manoel do Paraná</item>
+        <item>São Mateus do Sul</item>
+        <item>São Miguel do Iguaçu</item>
+        <item>São Pedro do Iguaçu</item>
+        <item>São Pedro do Ivaí</item>
+        <item>São Pedro do Paraná</item>
+        <item>São Sebastião da Amoreira</item>
+        <item>São Tomé</item>
+        <item>Sapopema</item>
+        <item>Sarandi</item>
+        <item>Saudade do Iguaçu</item>
+        <item>Sengés</item>
+        <item>Serranópolis do Iguaçu</item>
+        <item>Sertaneja</item>
+        <item>Sertanópolis</item>
+        <item>Siqueira Campos</item>
+        <item>Sulina</item>
+        <item>Tamarana</item>
+        <item>Tamboara</item>
+        <item>Tapejara</item>
+        <item>Tapira</item>
+        <item>Teixeira Soares</item>
+        <item>Telêmaco Borba</item>
+        <item>Terra Boa</item>
+        <item>Terra Rica</item>
+        <item>Terra Roxa</item>
+        <item>Tibagi</item>
+        <item>Tijucas do Sul</item>
+        <item>Toledo</item>
+        <item>Tomazina</item>
+        <item>Três Barras do Paraná</item>
+        <item>Tunas do Paraná</item>
+        <item>Tuneiras do Oeste</item>
+        <item>Tupãssi</item>
+        <item>Turvo</item>
+        <item>Ubiratã</item>
+        <item>Umuarama</item>
+        <item>União da Vitória</item>
+        <item>Uniflor</item>
+        <item>Uraí</item>
+        <item>Ventania</item>
+        <item>Vera Cruz do Oeste</item>
+        <item>Verê</item>
+        <item>Virmond</item>
+        <item>Vitorino</item>
+        <item>Wenceslau Braz</item>
+        <item>Xambrê</item>
+    </string-array>
+</resources>

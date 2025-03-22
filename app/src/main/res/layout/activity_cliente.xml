@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Cliente">
+
+    <TextView
+        style="@style/TextHeader"
+        android:id="@+id/textView12"
+        android:text="@string/cliente_label_cadCliente"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputNomeFantasia"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/cliente_label_nomeFantasia"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="#BBBBBB"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editNomeFantasia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:maxLength="38"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLogradouro"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/cliente_label_logradouro"
+        app:boxStrokeColor="@color/black"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="49"
+        app:hintTextColor="#BBBBBB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNomeFantasia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editLogradouro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:inputType="textCapWords"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputCidade"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLogradouro">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteCidade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:inputType="textNoSuggestions"
+            android:textSize="16sp"
+            android:hint="@string/clientes_label_cidade"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputNumero"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLogradouro"
+        app:layout_constraintTop_toTopOf="@+id/textInputCidade">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteNumero"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/cliente_label_numero"
+            android:maxLength="4"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputBairro"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/cliente_label_bairro"
+        app:boxStrokeColor="@color/black"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="29"
+        app:hintTextColor="#BBBBBB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputCidade">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editBairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:maxLength="30"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputTelefone"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/cliente_label_telefone"
+        app:boxStrokeColor="@color/black"
+        app:errorEnabled="true"
+        app:hintTextColor="#BBBBBB"
+        app:layout_constraintEnd_toEndOf="@+id/textInputNumero"
+        app:layout_constraintTop_toBottomOf="@+id/textInputCidade">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/clienteBtnSalvar"
+        style="@style/ButtonSave"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@null"
+        android:text="@string/produto_btn_save"
+        app:layout_constraintEnd_toEndOf="@+id/textInputTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/textInputBairro" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCliente"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/borda_rv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteBtnSalvar"
+        tools:listitem="@layout/item_cliente"
+        tools:itemCount="5"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
