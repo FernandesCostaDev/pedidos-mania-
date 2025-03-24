@@ -13,31 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ManiaSorvete"
         tools:targetApi="31">
-
         <activity
-            android:name=".ResumoCompra"
-            android:exported="true"
-            android:theme="@style/Base.Theme.ManiaSorvete">
-
-        </activity>
+            android:name=".ResumoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarrinhoActivity"
+            android:exported="false" />
         <activity
             android:name=".Pedido"
-            android:exported="true"
-            android:theme="@style/Base.Theme.ManiaSorvete">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Cliente"
-            android:exported="true"
-            android:theme="@style/Base.Theme.ManiaSorvete">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Produto"
-            android:exported="true"
-            android:theme="@style/Base.Theme.ManiaSorvete">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

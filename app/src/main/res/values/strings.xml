@@ -30,5 +30,6 @@
     <string name="item_cliente_nomeCliente">Nome Cliente:</string>
     <string name="pedido_autoComplete_selectCliente">Selecione o cliente:</string>
     <string name="pedido_txt_msg_pedido">Realizar pedido</string>
+    <string name="resumo">Resumo</string>
 
 </resources>

@@ -24,10 +24,10 @@ class PedidoAdapter(private val items: MutableList<DadosProduto>): RecyclerView.
 
     class PedidoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(item: DadosProduto) {
-            val textViewItem = itemView.findViewById<TextView>(R.id.pedidoItem)
+            val textViewItem = itemView.findViewById<TextView>(R.id.textViewPedidoDescricao)
             textViewItem.text = item.descricao
 
-            val textViewPrecoUnitario = itemView.findViewById<TextView>(R.id.pedidoPrecoUnitario)
+            val textViewPrecoUnitario = itemView.findViewById<TextView>(R.id.TextViewPedidoPreco)
             textViewPrecoUnitario.text = item.valor.toString()
         }
     }
