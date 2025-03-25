@@ -25,6 +25,14 @@ class CarrinhoActivity : AppCompatActivity() {
             insets
         }
 
+        val clienteNome = intent.getStringExtra("cliente_nome")
+        val logradouro = intent.getStringExtra("cliente_logradouro")
+        val numero = intent.getStringExtra("cliente_numero")
+        val bairro = intent.getStringExtra("cliente_bairro")
+        val cidade = intent.getStringExtra("cliente_cidade")
+        val telefone = intent.getStringExtra("cliente_telefone")
+        val dataHora = intent.getStringExtra("data_hora")
+
         produtosSelecionados =
             intent.getParcelableArrayListExtra("produtos_selecionados") ?: mutableListOf()
 
@@ -45,6 +53,13 @@ class CarrinhoActivity : AppCompatActivity() {
                 "produtos_finalizados",
                 ArrayList(produtosSelecionados)
             )
+            intent.putExtra("cliente_nome", clienteNome)
+            intent.putExtra("cliente_logradouro", logradouro)
+            intent.putExtra("cliente_numero", numero)
+            intent.putExtra("cliente_bairro", bairro)
+            intent.putExtra("cliente_cidade", cidade)
+            intent.putExtra("cliente_telefone", telefone)
+            intent.putExtra("data_hora", dataHora)
             startActivity(intent)
         }
     }

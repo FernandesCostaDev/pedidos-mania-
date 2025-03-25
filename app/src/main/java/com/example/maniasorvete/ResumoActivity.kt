@@ -1,6 +1,7 @@
 package com.example.maniasorvete
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.print.PrintManager
 import android.widget.Toast
@@ -27,6 +28,21 @@ class ResumoActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val clienteNome = intent.getStringExtra("cliente_nome")
+        val logradouro = intent.getStringExtra("cliente_logradouro")
+        val numero = intent.getStringExtra("cliente_numero")
+        val bairro = intent.getStringExtra("cliente_bairro")
+        val cidade = intent.getStringExtra("cliente_cidade")
+        val telefone = intent.getStringExtra("cliente_telefone")
+        val dataHora = intent.getStringExtra("data_hora")
+
+        binding.textViewResumoNome.text = clienteNome
+        binding.textViewResumoLogradouro.text = logradouro
+        binding.textViewResumoNumero.text = numero
+        binding.textViewResumoBairro.text = bairro
+        binding.textViewResumoCidade.text = cidade
+        binding.textViewResumoTelefone.text = telefone
+        binding.textViewResumoDataHora.text = dataHora
 
         produtosFinalizados =
             intent.getParcelableArrayListExtra("produtos_finalizados") ?: mutableListOf()
@@ -40,7 +56,9 @@ class ResumoActivity : AppCompatActivity() {
         calcularTotal()
 
         binding.buttonImprimir.setOnClickListener {
-            Toast.makeText(this, "Impressão em andamento!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ComprovanteActivity::class.java)
+            intent.putParcelableArrayListExtra("produtos_finalizados", ArrayList(produtosFinalizados))
+            startActivity(intent)
             //imprimirResumo()
         }
     }
@@ -61,7 +79,6 @@ class ResumoActivity : AppCompatActivity() {
 
     private fun calcularTotal() {
         val total = produtosFinalizados.sumOf { it.preco * it.quantidade }
-
         binding.textViewResumoTotal.text = "Total: R$ %.2f".format(total)
     }
 }

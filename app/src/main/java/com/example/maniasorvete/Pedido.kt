@@ -14,6 +14,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class Pedido : AppCompatActivity() {
     private lateinit var binding: ActivityPedidoBinding
@@ -51,17 +54,63 @@ class Pedido : AppCompatActivity() {
         }
 
         binding.buttonAdicionar.setOnClickListener {
-            val produtosSelecionados = pedidoAdapter.getProdutosSelecionados()
+            val clienteSelecionadoNome = binding.pedidoAutoCompleteCliente.text.toString()
 
-            if (produtosSelecionados.isNotEmpty()) {
-                val intent = Intent(this, CarrinhoActivity::class.java)
-                intent.putParcelableArrayListExtra(
-                    "produtos_selecionados",
-                    ArrayList(produtosSelecionados)
-                )
-                startActivity(intent)
+            if (clienteSelecionadoNome.isNotEmpty()) {
+                CoroutineScope(Dispatchers.IO).launch {
+                    val app = application as App
+                    val dao = app.db.clienteDao()
+
+                    // Buscar o cliente pelo nome fantasia
+                    val clienteSelecionado = dao.buscarPorNome(clienteSelecionadoNome)
+
+                    if (clienteSelecionado != null) {
+                        val produtosSelecionados = pedidoAdapter.getProdutosSelecionados()
+
+                        if (produtosSelecionados.isNotEmpty()) {
+                            val dataHoraAtual =
+                                SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(
+                                    Date()
+                                )
+
+                            val intent = Intent(this@Pedido, CarrinhoActivity::class.java).apply {
+                                putParcelableArrayListExtra(
+                                    "produtos_selecionados",
+                                    ArrayList(produtosSelecionados)
+                                )
+                                putExtra("cliente_nome", clienteSelecionado.nomeFantasia)
+                                putExtra("cliente_logradouro", clienteSelecionado.logradouro)
+                                putExtra("cliente_numero", clienteSelecionado.numero)
+                                putExtra("cliente_bairro", clienteSelecionado.bairro)
+                                putExtra("cliente_cidade", clienteSelecionado.cidade)
+                                putExtra("cliente_telefone", clienteSelecionado.telefone)
+                                putExtra("data_hora", dataHoraAtual)
+                            }
+
+                            withContext(Dispatchers.Main) {
+                                startActivity(intent)
+                            }
+                        } else {
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(
+                                    this@Pedido,
+                                    "Selecione pelo menos um produto!",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                    } else {
+                        withContext(Dispatchers.Main) {
+                            Toast.makeText(
+                                this@Pedido,
+                                "Cliente não encontrado!",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+                }
             } else {
-                Toast.makeText(this, "Selecione pelo menos um produto!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Selecione um cliente!", Toast.LENGTH_SHORT).show()
             }
         }
     }
