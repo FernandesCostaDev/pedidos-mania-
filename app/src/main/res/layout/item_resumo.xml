@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:hint="Descrição do produto"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
         android:textStyle="bold"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +47,6 @@
         android:hint="Subtotal: R$ 0,00"
         android:textColor="@android:color/black"
         android:textSize="14sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textViewResumoQuantidade"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewResumoQuantidade" />

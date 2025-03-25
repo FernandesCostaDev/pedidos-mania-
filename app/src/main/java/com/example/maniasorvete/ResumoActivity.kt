@@ -61,6 +61,7 @@ class ResumoActivity : AppCompatActivity() {
 
     private fun calcularTotal() {
         val total = produtosFinalizados.sumOf { it.preco * it.quantidade }
+
         binding.textViewResumoTotal.text = "Total: R$ %.2f".format(total)
     }
 }
