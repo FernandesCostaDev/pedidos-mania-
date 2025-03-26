@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#EFEFEF"
     tools:context=".ResumoActivity">
 
     <TextView
@@ -173,10 +173,15 @@
         android:id="@+id/recyclerViewResumo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
+        android:background="@color/white"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/buttonImprimir"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResumoTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         tools:itemCount="3"
         tools:listitem="@layout/item_resumo" />

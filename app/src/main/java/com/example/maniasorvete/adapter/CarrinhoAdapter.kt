@@ -1,7 +1,6 @@
 package com.example.maniasorvete.adapter
 
-import android.text.Editable
-import android.text.TextWatcher
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +10,68 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.maniasorvete.ProdutoParcelable
 import com.example.maniasorvete.R
 
+
+
 class CarrinhoAdapter(
+    private val produtos: MutableList<ProdutoParcelable>,
+    private val onTotalUpdated: (Double) -> Unit
+) : RecyclerView.Adapter<CarrinhoAdapter.CarrinhoViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarrinhoViewHolder {
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_carrinho, parent, false)
+        return CarrinhoViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: CarrinhoViewHolder, position: Int) {
+        holder.bind(produtos[position])
+    }
+
+    override fun getItemCount(): Int = produtos.size
+
+    inner class CarrinhoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private val textDescricao: TextView = itemView.findViewById(R.id.textViewDescricao)
+        private val textPreco: TextView = itemView.findViewById(R.id.textViewPreco)
+        private val textTotal: TextView = itemView.findViewById(R.id.textViewTotal)
+        private val buttonSubtrair: ImageButton = itemView.findViewById(R.id.buttonCarrinhoSubtrair)
+        private val buttonAdicionar: ImageButton = itemView.findViewById(R.id.buttonCarrinhoAdicionar)
+        private val textviewQuantidade: TextView = itemView.findViewById(R.id.textViewCarrinhoQuantidade)
+
+        fun bind(produto: ProdutoParcelable) {
+            textDescricao.text = produto.descricao
+            textPreco.text = "R$ %.2f".format(produto.preco)
+            textviewQuantidade.text = produto.quantidade.toString()
+
+            buttonAdicionar.setOnClickListener {
+                produto.quantidade++
+                atualizarUI(produto)
+            }
+
+            buttonSubtrair.setOnClickListener {
+                if (produto.quantidade > 0) {
+                    produto.quantidade--
+                    atualizarUI(produto)
+                }
+            }
+
+            atualizarUI(produto) // Atualiza a UI com os valores corretos ao criar a ViewHolder
+        }
+
+        private fun atualizarUI(produto: ProdutoParcelable) {
+            textviewQuantidade.text = produto.quantidade.toString()
+            textTotal.text = "R$ %.2f".format(produto.getSubtotal())
+            atualizarTotalCarrinho()
+        }
+    }
+
+    fun atualizarTotalCarrinho() {
+        val total = produtos.sumOf { it.getSubtotal() }
+        onTotalUpdated(total)
+    }
+}
+
+
+/*class CarrinhoAdapter(
     private val produtos: MutableList<ProdutoParcelable>,
     private val onTotalUpdated: (Double) -> Unit
 ) : RecyclerView.Adapter<CarrinhoAdapter.CarrinhoViewHolder>() {
@@ -95,4 +155,4 @@ class CarrinhoAdapter(
         val total = produtos.sumOf { it.getSubtotal() }
         onTotalUpdated(total) // Chama o callback para atualizar o TextView na Activity
     }
-}
+}*/

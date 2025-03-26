@@ -58,6 +58,13 @@ class ResumoActivity : AppCompatActivity() {
         binding.buttonImprimir.setOnClickListener {
             val intent = Intent(this, ComprovanteActivity::class.java)
             intent.putParcelableArrayListExtra("produtos_finalizados", ArrayList(produtosFinalizados))
+            intent.putExtra("data_hora", dataHora)
+            intent.putExtra("cliente_nome", clienteNome)
+            intent.putExtra("cliente_logradouro", logradouro)
+            intent.putExtra("cliente_numero", numero)
+            intent.putExtra("cliente_bairro", bairro)
+            intent.putExtra("cliente_cidade", cidade)
+            intent.putExtra("cliente_telefone", telefone)
             startActivity(intent)
             //imprimirResumo()
         }
