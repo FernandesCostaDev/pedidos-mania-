@@ -57,9 +57,9 @@ class ComprovanteActivity : AppCompatActivity() {
         sb.append("<html><body style='width: 58mm; font-size:12px; font-family: Arial, sans-serif;'>")
 
         // Título do Comprovante
-        sb.append("<hr>")
         sb.append("<h2 style='text-align:center;'>MANIA DI SORVETE</h2>")
-        sb.append("<h3 style='text-align:center;'>O Sabor do Verão</h3>")
+        sb.append("<div style='text-align:center;'><strong>O Sabor do Verão</strong></div>")
+        sb.append("<br>")
         sb.append("<div style='text-align:center;'>Av. Wilson Leite dos Santos s/n</div>")
         sb.append("<div style='text-align:center;'>Centro, Japira-Pr</div>")
         sb.append("<hr>")
@@ -81,15 +81,16 @@ class ComprovanteActivity : AppCompatActivity() {
         // Total da Compra
         val totalFormatado = String.format(localeBR, "R$ %.2f", total)
         sb.append("<h3 style='text-align:right;'>Total: $totalFormatado</h3>")
-        sb.append("<hr>")
+        sb.append("<br>")
 
         // Dados do Cliente
+        sb.append("<hr>")
+        sb.append("<hr>")
         sb.append("<div style='text-align:center;'><strong>$clienteNome</strong></div>")
-        sb.append("<p><strong>Logradouro:</strong> $logradouro</p>")
-        sb.append("<p><strong>Número:</strong> $numero</p>")
-        sb.append("<p><strong>Cidade:</strong> $cidade</p>")
-        sb.append("<p><strong>Bairro:</strong> $bairro</p>")
-        sb.append("<p><strong>Telefone:</strong> $telefone</p>")
+        sb.append("<div style='text-align:center;'>$logradouro, $numero</div>")
+        sb.append("<div style='text-align:center;'>$cidade, $bairro</div>")
+        sb.append("<div style='text-align:center;'>$telefone</div>")
+        sb.append("<hr>")
         sb.append("<hr>")
 
         sb.append("</body></html>")
