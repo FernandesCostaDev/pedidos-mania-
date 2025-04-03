@@ -62,4 +62,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation ("org.jetbrains.kotlin:kotlin-parcelize-runtime:1.8.0")
 
+    implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
+    implementation ("com.google.zxing:core:3.5.1")
+
 }
