@@ -28,7 +28,7 @@
         app:hintTextColor="#BBBBBB"
         app:errorEnabled="true"
         app:counterEnabled="true"
-        app:counterMaxLength="37"
+        app:counterMaxLength="25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12">
 
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
-            android:maxLength="38"
+            android:maxLength="26"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,7 +50,7 @@
         app:boxStrokeColor="@color/black"
         app:errorEnabled="true"
         app:counterEnabled="true"
-        app:counterMaxLength="49"
+        app:counterMaxLength="25"
         app:hintTextColor="#BBBBBB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputNomeFantasia">
@@ -59,7 +59,7 @@
             android:id="@+id/editLogradouro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="50"
+            android:maxLength="26"
             android:inputType="textCapWords"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -118,7 +118,7 @@
         app:boxStrokeColor="@color/black"
         app:errorEnabled="true"
         app:counterEnabled="true"
-        app:counterMaxLength="29"
+        app:counterMaxLength="19"
         app:hintTextColor="#BBBBBB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputCidade">
@@ -128,7 +128,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
-            android:maxLength="30"
+            android:maxLength="20"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 

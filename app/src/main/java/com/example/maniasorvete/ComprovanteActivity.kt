@@ -87,6 +87,7 @@ class ComprovanteActivity : AppCompatActivity() {
         val total = produtos.sumOf { it.getSubtotal() }
         val localeBR = Locale("pt", "BR")
         val logoBase64 = converterDrawableParaBase64(this, R.drawable.logo_mania)
+
         val sb = StringBuilder()
         sb.append("<html><body style='width: 58mm; font-size:12px; font-family: Arial, sans-serif;'>")
 
@@ -95,11 +96,13 @@ class ComprovanteActivity : AppCompatActivity() {
         sb.append("<div style='text-align:center;'>")
         sb.append("<img src='data:image/jpeg;base64,$logoBase64' width='200'/>")
         sb.append("</div>")
-        sb.append("<div style='text-align:center;'>Av. Wilson Leite dos Santos s/n</div>")
-        sb.append("<div style='text-align:center;'>Centro, Japira-Pr</div>")
+        sb.append("<div style='text-align:center;'>Av. Prefeito Moacir Costa, 200</div>")
+        sb.append("<div style='text-align:center;'>SL Comercial, Centro, Japira-Pr</div>")
+        sb.append("<div style='text-align:center;'>CNPJ: 01.995.440/0001-99</div>")
         sb.append("<hr>")
 
         sb.append("<h2 style='text-align:center;'>NOTA DE CONTROLE</h2>")
+        sb.append("<h3 style='text-align:center;'>$clienteNome</h3>")
         sb.append("<div style='text-align:center;'>$dataHora</div>")
         sb.append("<hr>")
 
@@ -216,7 +219,6 @@ class ComprovanteActivity : AppCompatActivity() {
         val tamanho = valor.length.toString().padStart(2, '0')
         return "${tag}$tamanho$valor"
     }
-
 
     private fun imprimirComprovante(htmlContent: String) {
         val printManager = getSystemService(Context.PRINT_SERVICE) as PrintManager
